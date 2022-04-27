@@ -1,0 +1,18 @@
+h1 {
+
+    font-size: 50px;
+
+    text-decoration: bold;
+
+}
+
+button {
+    background-color: aqua;
+}
+
+section {
+
+    background-size: center;
+    background-repeat: no-repeat;
+    background-image: url("https://media.istockphoto.com/vectors/run-group-of-running-people-low-poly-vector-illustration-geometric-vector-id1178523554?k=20&m=1178523554&s=612x612&w=0&h=b7Cd-QdwAZSf8xmQlHTPzEchUkx3SxcfcnbfDMqrCyI=");
+}
