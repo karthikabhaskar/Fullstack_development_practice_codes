@@ -1,0 +1,356 @@
+#logo {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    letter-spacing: 1mm;
+}
+
+#menu-bar {
+    color: #fff;
+    border: .1rem solid white;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+header {
+    position: fixed;
+    height: 1rem;
+    z-index: 100;
+}
+
+.nav-item {
+    font-size: larger;
+}
+
+.navbar-nav {
+    padding-left: 10%;
+}
+
+.navbar-nav li:hover {
+    box-shadow: 1rem 1rem 4rem rgba(225, 230, 235, 0.5);
+
+}
+
+#login-btn:hover {
+    color: orange;
+    box-shadow: 1rem 2rem 2rem rgba(225, 230, 235, 0.7);
+}
+
+.login-form-container {
+    position: fixed;
+    /* display: none; */
+    left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container .active {
+    top: 0;
+}
+
+.login-form-container form {
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: cornsilk;
+    width: 50rem;
+}
+
+.login-form-container form h3 {
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.login-form-container form .box {
+    width: 90%;
+    padding: .1rem;
+
+    font-size: 1.7rem;
+    color: #333;
+    margin: .6rem 0;
+    border: .5rem 0;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    text-transform: none;
+}
+
+.login-form-container form .box:focus {
+    border-color: orange;
+}
+
+.login-form-container form #remember {
+    margin: 2rem 0;
+}
+
+.login-form-container form label {
+    font-size: 1.5rem;
+}
+
+.login-form-container #form-close {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+.carousel-item {
+    height: 750px;
+    overflow: hidden;
+    background-image: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Beautiful-Stars-Landscape-Background-Image-.jpeg");
+}
+
+.d-block {
+    object-fit: contain;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100vh;
+}
+
+span {
+
+    font-weight: 900;
+    font-size: larger;
+
+    /* text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    background-color: rgba(16, 16, 16, 0.5); */
+}
+
+.head {
+    text-align: center;
+}
+
+.booknow {
+    background-image: url("https://thumbs.dreamstime.com/b/abstract-painted-light-blue-background-wooden-texture-141166031.jpg");
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bookform {
+    border-radius: 10%;
+    width: 40%;
+    box-shadow: 1rem 1rem 4rem rgba(15, 62, 101, 0.4);
+    /* background-color: rgba(57, 100, 135, 0.4);
+    border: 3px solid rgb(65, 75, 86); */
+    padding: 50px;
+    margin-right: 100px;
+}
+
+
+.gallery {
+    background-image: url("https://thumbs.dreamstime.com/b/abstract-painted-light-blue-background-wooden-texture-141166031.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.packagecard {
+    display: inline-flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* .package {
+    background-image: url("https://thumbs.dreamstime.com/b/abstract-painted-light-blue-background-wooden-texture-141166031.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.card img {
+    height: 200px;
+    width: 300px;
+}
+
+.card-body {
+    width: 19rem;
+    margin: 5px;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.box-container .box {
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.box-container .box i {
+    padding: 1rem;
+    color: rgb(3, 54, 96);
+}
+
+.box-container .box:hover {
+    box-shadow: 1rem 1rem 2rem rgba(15, 62, 101, 0.4);
+}
+
+/* .services {
+    background-image: url("https://thumbs.dreamstime.com/b/abstract-painted-light-blue-background-wooden-texture-141166031.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.gallbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.gallbox .box {
+    overflow: hidden;
+    box-shadow: 2rem 2rem 2rem rgba(15, 62, 101, 0.4);
+    border: 2px solid #fff;
+    border-radius: 1rem;
+    flex: 1 1 20rem;
+    height: 20rem;
+    position: relative;
+}
+
+.gallbox .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallbox .box .content {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(15, 62, 101, 0.8);
+    padding: 2rem;
+    padding-top: 2rem;
+    color: #fff;
+}
+
+.gallbox .box:hover .content {
+    top: 0;
+}
+
+#review .box {
+
+    height: 450px;
+    width: 400px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(15, 62, 101, 0.2);
+    border-radius: 4rem;
+    overflow: hidden;
+
+
+}
+
+#review .box img {
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+
+
+}
+
+.review-slider .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.wrapper .slider {
+    display: inline-flex;
+    overflow: hidden;
+
+    flex: 2 2 30rem;
+    height: 30rem;
+}
+
+/* .review-slider .slider{
+    overflow: hidden;
+    border: 2px solid black;
+    flex: 1 1 20rem;
+    height: 20rem;
+   width: 100%
+}  */
+
+.gallbox .box .content h3 {
+    color: orange;
+}
+
+.modal-body{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media(max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:991px) {
+    header {
+        padding: 2rem;
+    }
+}
+
+@media(max-width:991px) {
+    #menu-bar {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #333;
+        border-top: .1rem solid rgba(255, 255, 255, 0.2);
+        padding: 1rem 2rem;
+
+    }
+
+    header .navbar a {
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #222;
+    }
+}
+
+
+#form-close {
+    display: none;
+}

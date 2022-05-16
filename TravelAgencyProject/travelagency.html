@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="travelagency.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Travel Agency</title>
+
+
+
+</head>
+
+<body>
+    <div>
+        <div class="container-fluid px-0 mx-0">
+            <header class="container-fluid px-0 mx-0">
+                <div id="menu-bar" class="fas fa-bars"></div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+
+                            <b id="logo" class="text-light headexplore"><span style="color:red">E</span>xplore</b><sub><i
+                                    class="text-light"><small>Travel made easy</small></i></sub>
+                        </a>
+
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" aria-current="page"
+                                        href="#carouselExampleDark">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" aria-current="page" href="#booknow">Book
+                                        Now</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" aria-current="page"
+                                        href="#package">Packages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" aria-current="page"
+                                        href="#services">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" aria-current="page"
+                                        href="#gallery">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" aria-current="page" href="#review">Review</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-light" aria-current="page" href="#">Contact</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control search-bar me-2" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn head-search btn-warning" type="submit">Search</button>
+                            </form>
+                            <div class="icons">
+
+                                <i class="fas fa-2x fa-user btn-dark m-2 p-2" id="login-btn"></i>
+                                <button type="button" class="btn btn-warning mx-2" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Login
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </nav>
+            </header>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content modal-lg">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                <h3><b>LOGIN</b></h3>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- <div class="login-form-container" id="form-close"> -->
+                            <i class="fas fa-time"></i>
+                            <form action="" class="formik">
+                                <input type="text" id="name" class="box" placeholder="Enter your name">Name<br><br>
+
+                                <input type="email" id="email" class="box" placeholder="Enter your email">Email<br><br>
+                                <input type="password" id="password" class="box"
+                                    placeholder="Enter your password">Password<br><br>
+
+                                <input type="submit" value="login now" class="btn btn-dark" id=""><br><br>
+                                <input type="checkbox" id="remember">
+                                <label for="remember"> remember me</label>
+                                <p>forgot password ?<a href="#">click here</a></p>
+                                <p>Don't have an account ?<a href="#">register now</a></p>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="login-form-container" id="form-close">
+            <i class="fas fa-time"></i>
+            <form action="">
+                <h3>LOGIN</h3>
+                <input type="email" class="box" placeholder="Enter your email">
+                <input type="password" class="box" placeholder="Enter your password">
+                <input type="submit" value="login now" class="btn btn-outline-dark">
+                <input type="checkbox" id="remember">
+                <label for="remember"> remember me</label>
+                <p>forgot password ?<a href="#">click here</a></p>
+                <p>Don't have an account ?<a href="#">register now</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide container-fluid px-0 mx-0"
+        data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 0"></button>
+
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="1519801807380.jpg" class="d-block w-100" controls></img>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Excellence in Travel</h1>
+                    <h6>Some representative placeholder content for the first slide.</h6>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="0x0.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Ride your Best MOments</h1>
+                    <h6>Some representative placeholder content for the second slide.</h6>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="brown-hut-island-gazebo-38238-v2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>A new Moments of Life</h1>
+                    <h6>Some representative placeholder content for the third slide.</h6>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="senior-citizens-travel-insurance_cd09659466.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Heart of Discovering best</h1>
+                    <h6>Some representative placeholder content for the third slide.</h6>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="travel-world.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Bringing Joy From Every journey</h1>
+                    <h6>Some representative placeholder content for the third slide.</h6>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container-fluid" id="booknow">
+        <div>
+            <br>
+            <br><br>
+            <h1 class="head p-auto my-5">
+                <span>B</span>
+                <span>O</span>
+                <span>O</span>
+                <span>K </span>
+                &nbsp;
+                <span>N</span>
+                <span>0</span>
+                <span>W</span>
+            </h1>
+        </div>
+        <br><br>
+        <div class="container-fluid booknowc d-flex">
+            <div class="row">
+                <img src="Screenshot 2022-05-15 090021.png" height="500px" width:="400px" p-auto mx-2>
+            </div>
+            <div class="container-fluid bookform">
+                <form action=" " class="booknowform" style="padding: 5px; margin:auto">
+                    <div class="inputbox">
+                        <label for="fname">
+                            <h4>First Name</h4>
+                        </label><br>
+                        <input type="text" id="fname" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="lname">
+                            <h4>Last Name</h4>
+                        </label><br>
+                        <input type="text" id="lname" placeholder="Enter your last name" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="whereto">
+                            <h4>Where To</h4>
+                        </label><br>
+                        <input type="text" id="whereto" placeholder="search places" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="howmany">
+                            <h4>How many</h4>
+                        </label><br>
+                        <input type='number' id="howmany" placeholder="number of guests" required>
+                    </div>
+                    <div class="inputbox">
+                        <label>
+                            <h4>Arrivals</h4>
+                            <input type="date" id="arrivals" name="bday" class="row" required pattern="\d{4}-\d{2}-\d{2}">
+                        </label><br>
+                    </div>
+                    <div class="inputbox">
+                        <label>
+                            <h4>Leaving</h4>
+                            <input type="date" id="Leaving" name="bday" class="row" required pattern="\d{4}-\d{2}-\d{2}">
+                        </label>
+                    </div>
+                    <div class=""><br>
+                        <button type="submit" class="btn booknowbtn1 btn-dark">Book Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="package">
+        <div><br>
+            <br><br><br>
+            <h1 class="head">
+                <span>P</span>
+                <span>A</span>
+                <span>C</span>
+                <span>K</span>
+                <span>A</span>
+                <span>G</span>
+                <span>E</span>
+                <span>S</span>
+            </h1>
+        </div><br><br>
+        <div class="container packagecard">
+            <div class="package1 row">
+                <div class="card " style="width: 20rem; margin:5px;">
+                    <img src="https://img.theculturetrip.com/450x/smart/wp-content/uploads/2017/09/manali-1.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Manali,India</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <p><b>$90.00</b>
+                            <s>$120</s>
+                        </p>
+                        <button type="submit" class="btn booknowbtn btn-dark">Book Now</button>
+                    </div>
+                </div>
+                <div class="card " style="width:20rem; margin:5px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Taj-Mahal.jpg/200px-Taj-Mahal.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Taj-Mahal,India</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <p><b>$90.00</b>
+                            <s>$120</s>
+                        </p>
+                        <button type="submit" class="btn booknowbtn btn-dark">Book Now</button>
+                    </div>
+                </div>
+                <div class="card " style="width:20rem; margin:5px;">
+                    <img src="https://www.remotelands.com/storage/media/797/conversions/b160801014-banner-size.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sikkim,India</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <p><b>$90.00</b>
+                            <s>$120</s>
+                        </p>
+                        <button type="submit" class="btn booknowbtn btn-dark">Book Now</button>
+                    </div>
+                </div>
+                <div class="card" style="width:20rem; margin:5px;">
+                    <img src="https://qph.cf2.quoracdn.net/main-qimg-f94c63dc0a00ae470a9db3b3ec2c4d51-lq"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kanyakumari,India</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <br>
+                        <p><b>$90.00</b>
+                            <s>$120</s>
+                        </p>
+                        <button type="submit" class="btn booknowbtn btn-dark">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="package2 row">
+                <div class="card" style="width:20rem; margin:5px;">
+                    <img src="https://krishnatourtravels.com/uploads/1580624398-goa-tour-package.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Goa, India</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <p><b>$90.00</b>
+                            <s>$120</s>
+                        </p>
+                        <button type="submit" class="btn booknowbtn btn-dark">Book Now</button>
+                    </div>
+                </div>
+                <div class="card" style="width:20rem; margin:5px;">
+                    <img src="https://images.hindustantimes.com/img/2021/08/12/1600x900/Riverfront_Stretch_4_1628736264025_1628736273948.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Indore, India</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <p><b>$90.00</b>
+                            <s>$120</s>
+                        </p>
+                        <button type="submit" class="btn booknowbtn btn-dark">Book Now</button>
+                    </div>
+                </div>
+                <div class="card" style="width:20rem; margin:5px;">
+                    <img src="https://www.karnatakatourism.org/wp-content/uploads/2020/05/Hampi.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hampi,India</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <p><b>$90.00</b>
+                            <s>$120</s>
+                        </p>
+                        <button type="submit" class="btn booknowbtn btn-dark">Book Now</button>
+                    </div>
+                </div>
+                <div class="card" style="width:20rem; margin:5px;">
+                    <img src="https://shimlatourism.co.in/images/places-to-visit/headers/summer-hill-shimla-india-tourism-entry-fee-timings-holidays-reviews-header.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Shimla, India</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <p><b>$90.00</b>
+                            <s>$120</s>
+                        </p>
+                        <button type="submit" class="btn booknowbtn btn-dark">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="services">
+        <div><br>
+            <br><br><br>
+            <h1 class="head ">
+                <span>S</span>
+                <span>E</span>
+                <span>R</span>
+                <span>V</span>
+                <span>I</span>
+                <span>C</span>
+                <span>E</span>
+                <span>S</span>
+            </h1>
+            <br><br>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-4x fa-hotel"></i>
+                    <h3>Affordable Hotels</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, nesciunt! Qui et nam,
+                        consequatur, quo odio quasi dolorum obcaecati dolore sequi provident iure, veniam possimus
+                        delectus labore quisquam beatae? Iure?</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-4x fa-utensils"></i>
+                    <h3>Food and Drinks</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, nesciunt! Qui et nam,
+                        consequatur, quo odio quasi dolorum obcaecati dolore sequi provident iure, veniam possimus
+                        delectus labore quisquam beatae? Iure?</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-4x fa-bullhorn"></i>
+                    <h3>Safty guide</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, nesciunt! Qui et nam,
+                        consequatur, quo odio quasi dolorum obcaecati dolore sequi provident iure, veniam possimus
+                        delectus labore quisquam beatae? Iure?</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-4x fa-globe-asia"></i>
+                    <h3>Around the world</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, nesciunt! Qui et nam,
+                        consequatur, quo odio quasi dolorum obcaecati dolore sequi provident iure, veniam possimus
+                        delectus labore quisquam beatae? Iure?</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-4x fa-plane"></i>
+                    <h3>Fastest Travel</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, nesciunt! Qui et nam,
+                        consequatur, quo odio quasi dolorum obcaecati dolore sequi provident iure, veniam possimus
+                        delectus labore quisquam beatae? Iure?</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-4x fa-hiking"></i>
+                    <h3>Amazing Places</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, nesciunt! Qui et nam,
+                        consequatur, quo odio quasi dolorum obcaecati dolore sequi provident iure, veniam possimus
+                        delectus labore quisquam beatae? Iure?</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class=" container-fluid" id="gallery">
+        <div><br>
+            <br><br><br>
+            <h1 class="head">
+                <span>G</span>
+                <span>A</span>
+                <span>L</span>
+                <span>L</span>
+                <span>E</span>
+                <span>R</span>
+                <span>Y</span>
+            </h1>
+        </div><br><br>
+        <div class="gallbox">
+            <div class="box">
+
+                <img src="http://ttgasia.2017.ttgasia.com/wp-content/uploads/sites/2/2019/03/paragliding.jpg"
+                    alt="Loding.......">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, nesciunt! Qui et nam,
+                        consequatur, quo odio quasi dolorum obcaecati dolore sequi provident iure, veniam possimus
+                        delectus labore quisquam beatae? Iure?</p>
+                    <a href="#" class="btn btn-dark">see more</a>
+                </div>
+            </div>
+            <div class="box">
+
+                <img src="https://www.indianholiday.uk/blog/wp-content/uploads/2018/01/Parasailing.jpg"
+                    alt="Loading.........">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, nesciunt! Qui et nam,
+                        consequatur, quo odio quasi dolorum obcaecati dolore sequi provident iure, veniam possimus
+                        delectus labore quisquam beatae? Iure?</p>
+                    <a href="#" class="btn btn-dark">see more</a>
+                </div>
+            </div>
+            <div class="box">
+
+                <img src="shutterstock_129199910-e1419291409592.jpg" alt="loading....">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, nesciunt! Qui et nam,
+                        consequatur, quo odio quasi dolorum obcaecati dolore sequi provident iure, veniam possimus
+                        delectus labore quisquam beatae? Iure?</p>
+                    <a href="#" class="btn btn-dark">see more</a>
+                </div>
+            </div>
+            <div class="box">
+
+                <img src="https://www.utracks.com/croppedimages/Europe/Alps/Mont-Blanc-Family-479038-500px.jpg"
+                    alt="Loading.......">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, nesciunt! Qui et nam,
+                        consequatur, quo odio quasi dolorum obcaecati dolore sequi provident iure, veniam possimus
+                        delectus labore quisquam beatae? Iure?</p>
+                    <a href="#" class="btn btn-dark">see more</a>
+                </div>
+            </div>
+            <div class="box">
+
+                <img src="images (10).jpg" alt="Loading....">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, nesciunt! Qui et nam,
+                        consequatur, quo odio quasi dolorum obcaecati dolore sequi provident iure, veniam possimus
+                        delectus labore quisquam beatae? Iure?</p>
+                    <a href="#" class="btn btn-dark">see more</a>
+                </div>
+            </div>
+            <div class="box">
+
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/9f/ca/64/splashing-wars-are-the.jpg"
+                    alt="Loading..........">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, nesciunt! Qui et nam,
+                        consequatur, quo odio quasi dolorum obcaecati dolore sequi provident iure, veniam possimus
+                        delectus labore quisquam beatae? Iure?</p>
+                    <a href="#" class="btn btn-dark">see more</a>
+                </div>
+            </div>
+            <div class="box">
+
+                <img src="https://media.cntraveler.com/photos/5e260c3488b8890009f87ca2/master/w_4500,h_3000,c_limit/Spain-Amazing Places-GettyImages-535541291.jpg"
+                    alt="Loding........">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, nesciunt! Qui et nam,
+                        consequatur, quo odio quasi dolorum obcaecati dolore sequi provident iure, veniam possimus
+                        delectus labore quisquam beatae? Iure?</p>
+                    <a href="#" class="btn btn-dark">see more</a>
+                </div>
+            </div>
+            <div class="box">
+
+                <img src="https://www.traveldailymedia.com/assets/2019/09/shutterstock_459494017.png"
+                    alt="loding..........">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, nesciunt! Qui et nam,
+                        consequatur, quo odio quasi dolorum obcaecati dolore sequi provident iure, veniam possimus
+                        delectus labore quisquam beatae? Iure?</p>
+                    <a href="#" class="btn btn-dark">see more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <div class="container-fluid" id="review">
+        <div><br>
+            <br><br><br>
+            <h1 class="head">
+                <span>R</span>
+                <span>E</span>
+                <span>V</span>
+                <span>I</span>
+                <span>E</span>
+                <span>W</span>
+            </h1>
+            <br><br>
+            <div class="review-slider swiper">
+                <div class="wrapper swiper-wrapper">
+                    <div class="slider swiper-slide">
+                        <div class="box">
+                            <img src="https://photocatchthemoment.com/wp-content/uploads/2016/01/business_headshot_linkedIn_profile-picture_Dublin_Rafael-Photography.jpg"
+                                alt="Loading">
+
+                            <h3>Abraham</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident ex obcaecati qui
+                                nihil
+                                aspernatur, maxime perspiciatis iusto deserunt quis blanditiis aut quam delectus eaque
+                                neque
+                                cumque odit, assumenda in.
+                            </p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider swiper-slide">
+                        <div class="box">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4SfIukv5PGGCPPbNgVVvBwlfQValj8HitTg&usqp=CAU"
+                                alt="Loading...">
+
+                            <h3>Shanley</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident ex obcaecati qui
+                                nihil
+                                aspernatur, maxime perspiciatis iusto deserunt quis blanditiis aut quam delectus eaque
+                                neque
+                                cumque odit, assumenda in.
+                            </p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider swiper-slide">
+                        <div class="box">
+                            <img src="https://images.squarespace-cdn.com/content/v1/545a4167e4b0a17b7513a6e9/1600774536936-8I7CN8QQXALFHYJ32O7B/KEV_6606_web.jpg"
+                                alt="Loading...">
+                            <h3>Lara</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident ex obcaecati qui
+                                nihil
+                                aspernatur, maxime perspiciatis iusto deserunt quis blanditiis aut quam delectus eaque
+                                neque
+                                cumque odit, assumenda in.
+                            </p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider swiper-slide">
+                        <div class="box">
+                            <img src="https://www.elitephotographygroup.com/wp-content/uploads/2020/04/ElitePhotographyGroup-Corporate-Studio-Business-Headshot-Photography-Man-Jacket-striped-tie-gray-backdrop-12-040-097.jpg"
+                                alt="">
+                            <h3>Daniel</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident ex obcaecati qui
+                                nihil
+                                aspernatur, maxime perspiciatis iusto deserunt quis blanditiis aut quam delectus eaque
+                                neque
+                                cumque odit, assumenda in.
+                            </p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider swiper-slide">
+                        <div class="box">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ7RcfA1KNEtLJEIqZ7JE870ht3rY-LFQP4g&usqp=CAU"
+                                alt="Loading.........">
+                            <h3>William kate</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident ex obcaecati qui
+                                nihil
+                                aspernatur, maxime perspiciatis iusto deserunt quis blanditiis aut quam delectus eaque
+                                neque
+                                cumque odit, assumenda in.
+                            </p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider swiper-slide">
+                        <div class="box">
+                            <img src="https://i.pinimg.com/originals/f8/66/8e/f8668e5328cfb4938903406948383cf6.png"
+                                alt="Loading.......">
+
+                            <h3>Abraham</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident ex obcaecati qui
+                                nihil
+                                aspernatur, maxime perspiciatis iusto deserunt quis blanditiis aut quam delectus eaque
+                                neque
+                                cumque odit, assumenda in.
+                            </p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid bg-dark text-light mx-0 px-0">
+        <footer class="py-0 my-0">
+            <p class="text-center ">© 2021 Company, Inc</p>
+            <ul class="nav justify-content-center border-bottom text-light pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-light ">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Contact Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About</a></li>
+            </ul>
+
+        </footer>
+    </div>
+
+    </div>
+    <script src="travelagency.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/5a3e09cd44.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
