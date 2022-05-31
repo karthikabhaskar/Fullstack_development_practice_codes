@@ -1,0 +1,21 @@
+#header {
+    display: flex;
+    top: 0;
+    background-color: azure;
+}
+
+#header-img{
+    width: 10rem;
+    height: 3rem;
+}
+
+ul{
+    display: flex;
+}
+li{
+    margin: 10px 20px;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+}

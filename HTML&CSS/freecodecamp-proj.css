@@ -1,0 +1,29 @@
+#main-doc {
+    display: flex;
+
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    top: 0;
+    right: 0;
+}
+
+.main-section {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 20px;
+
+    color: aliceblue;
+}
+
+.main-section a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
